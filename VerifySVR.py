@@ -24,16 +24,17 @@ copy = df_model.copy()
 
 
 #split df for validation and model
+predict_date = 1
 
 
-Y = df_model.iloc[3:,1].copy()
-df_model.drop('water_level_x', axis=1, inplace=True)
+Y = df_model.iloc[predict_date:,1].copy()
+df_model.drop('target', axis=1, inplace=True)
 
-df_model = df_model.shift(-3)
+num = Y.shape[0]
 
-df_model = df_model.dropna()
+df_model = df_model[0:num]
 
-X_train, X_test, y_train1, y_test1 = train_test_split(df_model, Y, test_size=0.8, random_state=0)
+X_train, X_test, y_train1, y_test1 = train_test_split(df_model, Y, test_size=0.2, random_state=0)
 
 min_max_scaler = preprocessing.MinMaxScaler()
 
