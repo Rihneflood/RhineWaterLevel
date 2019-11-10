@@ -1,0 +1,11 @@
+Hi, This is the code that gets the best result.
+
+Please add the river_data and weather_data etc to this file and you can run.
+
+You need to stations (river) file to run the code. You also need to libraries specified in the beginning of the file. 
+
+To create stations file you can run the "river data exploration.ipynb"
+
+You can just run the "Liner Regression Model.ipynb"
+
+Recepcan Adiguzel, Team 9, Rhine Flood
