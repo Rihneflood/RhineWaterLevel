@@ -7,8 +7,8 @@ if __name__ == '__main__':
 
     df = pd.read_csv('river_stations.csv')
 
-    df.Nextdownstreamstation = df.Nextdownstreamstation.replace('-', -1)
-    df.Nextdownstreamstation = df.Nextdownstreamstation.astype(np.int64)
+        df.Nextdownstreamstation = df.Nextdownstreamstation.replace('-', -1)
+        df.Nextdownstreamstation = df.Nextdownstreamstation.astype(np.int64)
 
     print(df.info())
 
